@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://localhost/reglog/registration.php# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>registration</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&amp;display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .registration-container {
+      width: 400px;
+      margin: 100px auto;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .registration-container h2 {
+      text-align: center;
+      color: #333333;
+    }
+
+    .registration-container input[type="text"],
+    .registration-container input[type="password"],
+    .registration-container input[type="email"]
+     {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .registration-container input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .registration-container input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .registration-container .form-group {
+      margin-top: 10px;
+    }
+
+    .registration-container .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333333;
+    }
+
+    .registration-container .form-group input[type="checkbox"] {
+      margin-top: 5px;
+    }
+
+    .registration-container .form-group .checkbox-label {
+      margin-left: 5px;
+      color: #333333;
+    }
+
+    .registration-container .form-group a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+
+    .registration-container .form-group a:hover {
+      text-decoration: underline;
+    }
+
+    .registration-container .login-link {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .registration-container .login-link span {
+      color: #333333;
+    }
+    
+    button{
+        color: white;
+        align-items: center;
+        background-color: #01a500;
+        border: none;
+        padding: 10px 30px;
+        font-weight: bold;
+        border-radius: 8px;
+        margin-left: 140px;
+    }
+    button:hover{
+      background-color:#4CAF50 ;
+    }
+    button  a{
+      text-decoration: none;
+    }
+    </style>
+<style type="text/css">@font-face { font-family: Roboto; src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf"); }</style></head>
+<body>
+  <div>
+  <div class="registration-container">
+  <h2>Registration</h2>
+  <form class="" action="http://localhost/reglog/registration.php" method="post" autocomplete="off"><div>
+
+    <div class="form-group">
+    <label for="name">Name </label>
+    <input type="text" name="name" id="name" placeholder="Enter name" required="" value=""> 
+    </div>
+
+    <div class="form-group">
+    <label for="username">Username </label>
+    <input type="text" name="username" id="username" placeholder="Enter username" required="" value=""> 
+    </div>
+
+   <div class="form-group">
+   <label for="email">Email </label>
+    <input type="email" name="email" id="email" placeholder="Enter email" required="" value=""> 
+   </div>
+
+    <div class="form-group">
+    <label for="password">Password </label>
+    <input type="password" name="password" id="password" placeholder="Enter password" required="" value=""> <br>
+    </div>
+
+    <div class="form-group">
+    <label for="confirmpassword">Confirm Password</label>
+    <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Enter confirm password" required="" value=""> 
+    </div>
+    
+   
+           
+      </div>  
+   <div class="form-group">
+        
+        <input type="checkbox" id="agree-checkbox" required="">
+        <label class="checkbox-label" for="agree-checkbox">I agree to the <a href="http://localhost/reglog/terms%20and%20conditions.html">Terms and Conditions</a></label>
+        <hr>
+        <br>
+        </div>
+       <button type="submit" name="submit">Register</button>
+       <div>
+        <p>Have an account? <a href="http://localhost/reglog/registration.php#">Login</a></p>
+       
+    </div>
+   </form></div>
+   
+    
+  
+  </div>
+  
+
+<script>
+		function returnCommentSymbol(language = "javascript") {
+			const languageObject = {
+				bat: "@REM",
+				c: "//",
+				csharp: "//",
+				cpp: "//",
+				closure: ";;",
+				coffeescript: "#",
+				dockercompose: "#",
+				css: "/*DELIMITER*/",
+				"cuda-cpp": "//",
+				dart: "//",
+				diff: "#",
+				dockerfile: "#",
+				fsharp: "//",
+				"git-commit": "//",
+				"git-rebase": "#",
+				go: "//",
+				groovy: "//",
+				handlebars: "{{!--DELIMITER--}}",
+				hlsl: "//",
+				html: "<!--DELIMITER-->",
+				ignore: "#",
+				ini: ";",
+				java: "//",
+				javascript: "//",
+				javascriptreact: "//",
+				json: "//",
+				jsonc: "//",
+				julia: "#",
+				latex: "%",
+				less: "//",
+				lua: "--",
+				makefile: "#",
+				markdown: "<!--DELIMITER-->",
+				"objective-c": "//",
+				"objective-cpp": "//",
+				perl: "#",
+				perl6: "#",
+				php: "<!--DELIMITER-->",
+				powershell: "#",
+				properties: ";",
+				jade: "//-",
+				python: "#",
+				r: "#",
+				razor: "<!--DELIMITER-->",
+				restructuredtext: "..",
+				ruby: "#",
+				rust: "//",
+				scss: "//",
+				shaderlab: "//",
+				shellscript: "#",
+				sql: "--",
+				svg: "<!--DELIMITER-->",
+				swift: "//",
+				tex: "%",
+				typescript: "//",
+				typescriptreact: "//",
+				vb: "'",
+				xml: "<!--DELIMITER-->",
+				xsl: "<!--DELIMITER-->",
+				yaml: "#"
+			}
+			if(!languageObject[language]){
+				return languageObject["python"].split("DELIMITER")
+			}
+			return languageObject[language].split("DELIMITER")
+		}
+		var savedChPos = 0
+		var returnedSuggestion = ''
+		let editor, doc, cursor, line, pos
+		pos = {line: 0, ch: 0}
+		var suggestionsStatus = false
+		var docLang = "python"
+		var suggestionDisplayed = false
+		var isReturningSuggestion = false
+		document.addEventListener("keydown", (event) => {
+		setTimeout(()=>{
+			editor = event.target.closest('.CodeMirror');
+			if (editor){
+				const codeEditor = editor.CodeMirror
+				if(!editor.classList.contains("added-tab-function")){
+					editor.classList.add("added-tab-function")
+					codeEditor.removeKeyMap("Tab")
+					codeEditor.setOption("extraKeys", {Tab: (cm)=>{
+
+						if(returnedSuggestion){
+							acceptTab(returnedSuggestion)
+						}
+						else{
+							cm.execCommand("defaultTab")
+						}
+					}})
+				}
+				doc = editor.CodeMirror.getDoc()
+				cursor = doc.getCursor()
+				line = doc.getLine(cursor.line)
+				pos = {line: cursor.line, ch: line.length}
+
+				if(cursor.ch > 0){
+					savedChPos = cursor.ch
+				}
+
+				const fileLang = doc.getMode().name
+				docLang = fileLang
+				const commentSymbol = returnCommentSymbol(fileLang)
+				if (event.key == "?"){
+					var lastLine = line
+					lastLine = lastLine.slice(0, savedChPos - 1)
+
+					if(lastLine.trim().startsWith(commentSymbol[0])){
+						if(fileLang !== "null"){
+							lastLine += " "+ fileLang
+						}
+						
+						lastLine = lastLine.split(commentSymbol[0])[1]
+						window.postMessage({source: 'getQuery', payload: { data: lastLine } } )
+						isReturningSuggestion = true
+						displayGrey("\nBlackbox loading...")
+					}
+				}else if(event.key === "Enter" && suggestionsStatus && !isReturningSuggestion){
+					var query = doc.getRange({ line: Math.max(0,cursor.line-50), ch: 0 }, { line: cursor.line, ch: line.length })
+					window.postMessage({source: 'getSuggestion', payload: { data: query, language: docLang, cursorPos: pos } } )
+					displayGrey("Blackbox loading...")
+				}else if(event.key === "ArrowRight" && returnedSuggestion){
+					acceptTab(returnedSuggestion)
+				}else if(event.key === "Enter" && isReturningSuggestion){
+					displayGrey("\nBlackbox loading...")
+				}else if(event.key === "Escape"){
+					displayGrey("")
+				}
+			}
+		}, 0)
+		})
+
+		function acceptTab(text){
+		if (suggestionDisplayed){
+			displayGrey("")
+			doc.replaceRange(text, pos)
+			returnedSuggestion = ""
+			updateSuggestionStatus(false)
+		}
+		}
+		function acceptSuggestion(text){
+			displayGrey("")
+			doc.replaceRange(text, pos)
+			returnedSuggestion = ""
+			updateSuggestionStatus(false)
+		}
+		function displayGrey(text){
+			if(!text){
+				document.querySelector(".blackbox-suggestion").remove()
+				return
+			}
+			var el = document.querySelector(".blackbox-suggestion")
+			if(!el){
+				el = document.createElement('span')
+				el.classList.add("blackbox-suggestion")
+				el.style = 'color:grey'
+				el.innerText = text
+			}
+			else{
+				el.innerText = text
+			}
+			
+			var lineIndex = pos.line;
+			editor.getElementsByClassName('CodeMirror-line')[lineIndex].appendChild(el)
+		}
+		function updateSuggestionStatus(s){
+			suggestionDisplayed = s
+			window.postMessage({source: 'updateSuggestionStatus', status: suggestionDisplayed, suggestion: returnedSuggestion})
+		}
+		window.addEventListener('message', (event)=>{
+		if (event.source !== window ) return
+		if (event.data.source == 'return'){
+			isReturningSuggestion = false
+			const formattedCode = formatCode(event.data.payload.data)
+			returnedSuggestion = formattedCode
+			displayGrey(formattedCode)
+			updateSuggestionStatus(true)
+		}
+		if(event.data.source == 'suggestReturn'){
+			const prePos = event.data.payload.cursorPos
+			if(pos.line == prePos.line && pos.ch == prePos.ch){
+				returnedSuggestion = event.data.payload.data
+				displayGrey(event.data.payload.data)
+				updateSuggestionStatus(true)
+			}
+			else{
+				displayGrey()
+			}
+		}
+		if(event.data.source == 'codeSearchReturn'){
+			isReturningSuggestion = false
+			displayGrey()
+		}
+		if(event.data.source == 'suggestionsStatus'){
+			suggestionsStatus = event.data.payload.enabled
+		}
+		if(event.data.source == 'acceptSuggestion'){
+			
+			acceptSuggestion(event.data.suggestion)
+		}
+		})
+		document.addEventListener("keyup", function(){
+			returnedSuggestion = ""
+			updateSuggestionStatus(false)
+		})
+		function formatCode(data) {
+			if (Array.isArray(data)) {
+				var finalCode = ""
+				var pairs = []
+		
+				const commentSymbol = returnCommentSymbol(docLang)
+				data.forEach((codeArr, idx) => {
+					const code = codeArr[0]
+					var desc = codeArr[1]
+					const descArr = desc.split("\n")
+					var finalDesc = ""
+					descArr.forEach((descLine, idx) => {
+						const whiteSpace = descLine.search(/\S/)
+						if (commentSymbol.length < 2 || idx === 0) {
+							finalDesc += insert(descLine, whiteSpace, commentSymbol[0])
+						}
+						if (commentSymbol.length > 1 && idx === descArr.length - 1) {
+							finalDesc = finalDesc + commentSymbol[1] + "\n"
+						}
+					})
+		
+					finalCode += finalDesc + "\n\n" + code
+					pairs.push(finalCode)
+				})
+				return "\n"+pairs.join("\n")
+			}
+		
+			return "\n"+data
+		}
+		
+		function insert(str, index, value) {
+			return str.substr(0, index) + value + str.substr(index)
+		}
+	</script></body></html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+   <style type="text/css">
+      
+      .image-container {
+         margin: 0 auto; /* center the image containers */
+         width: 30%;
+         box-shadow: 0 15px 20px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22); /* material box shadow */
+         margin-bottom: 20px;
+         transition-duration: 1s;
+      }
+      .image-container:hover {
+         width: 90%;
+         box-shadow: 0 10px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+      }
+      /* make the images responsive */
+      img {
+         width: 100%;
+         height: auto;
+      }
+      .image-description {
+         padding: 0 15px 15px 15px;
+         text-align: center;
+      }
+      
+      /* lightbox stylesheet */
+      .lightbox {
+         display: table; /* helps us center the lightbox-content */
+         transition-duration: 1s; /* duration of the fade in effect */
+         
+         /* make the lightbox occupy the entire page */
+         position: fixed;
+         top: -100%; /* hide the lightbox above the top edge */
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: rgba(0, 0, 0, 0.7); /* black with 0.7 opacity */
+      }
+      .lightbox:target {
+         top: 0; /* make the lightbox cover the entire page */
+      }
+      .lightbox-content {
+         display: table-cell;
+         vertical-align: middle; /* vertically center */
+         text-align: center; /* horizontally center */
+      }
+      .close {
+         /* position the CLOSE button to the top-right corner */
+         position: absolute;
+         top: 10px;
+         right: 10px;
+         
+         /* style the close button */
+         font-size: 20px;
+         font-weight: 300;
+         text-decoration: none;
+         color: white;
+      }
+      
+      /* make the image responsive */
+      .lightbox img {
+         max-width: 100%;
+         height: auto;
+      }
+      .flex{
+    display: flex;
+    align-items: center;;}
+
+   </style>
+</head>
+<body>
+   <h1 style="text-align: center"> CSS Image Gallery </h1>
+   <div class="gallery flex">
+       	
+      <div class="image-container" id="container1">
+         <a href="#image1"><img src="imagesgallery/imageone.jpg" /></a>
+         <p class="image-description"> Lorem ipsum dolor sit amet. </p>
+      </div>
+      
+      <div class="image-container" id="container2">
+         <a href="#image2"><img src="imagesgallery/imagetwo.jpg" /></a>
+         <p class="image-description"> Lorem ipsum dolor sit amet. </p>
+      </div>
+      
+      <div class="image-container" id="container3">
+         <a href="#image3"><img src="imagesgallery/imagethree.jpg" /></a>
+         <p class="image-description"> Lorem ipsum dolor sit amet. </p>
+      </div>
+   </div>
+      
+   
+</body>
+</html>
+<!-- <div class="lightbox" id="image1">
+      <a href="#" class="close">CLOSE</a>
+      <div class="lightbox-content">
+         <img src="images/road.jpg" />
+      </div>
+   </div>
+   
+   <div class="lightbox" id="image2">
+      <a href="#" class="close">CLOSE</a>
+      <div class="lightbox-content">
+         <img src="images/snow.jpg" />
+      </div>
+   </div>
+   
+   <div class="lightbox" id="image3">
+      <a href="#container3" class="close">CLOSE</a>
+      <div class="lightbox-content">
+         <img src="images/city.jpg" />
+      </div>
+   </div>
+   
+   <div class="lightbox" id="image4">
+      <a href="#container4" class="close">CLOSE</a>
+      <div class="lightbox-content">
+         <img src="images/blue-planet.jpg" />
+      </div>
+   </div> -->
